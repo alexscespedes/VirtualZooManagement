@@ -6,10 +6,13 @@ Animal parrot = new Parrot("Polly");
 
 List<Animal> zooAnimals = new List<Animal> { lion, elephant, parrot };
 
-foreach (var animal in zooAnimals)
-{
-    Console.WriteLine($"--- {animal.Name} ---");
-    animal.MakeSound();
-    animal.Feed();
-    Console.WriteLine("");
-}
+ZooKeeper zooKeeper = new ZooKeeper("John");
+zooKeeper.FeedAllAnimals(zooAnimals);
+
+// foreach (var animal in zooAnimals)
+// {
+//     Console.WriteLine($"--- {animal.Name} ---");
+//     animal.MakeSound();
+//     animal.Feed();
+//     Console.WriteLine("");
+// }
